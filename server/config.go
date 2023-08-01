@@ -3,8 +3,8 @@ package server
 import (
 	"fmt"
 	auxlib2 "github.com/vela-ssoc/vela-kit/auxlib"
-	"github.com/vela-ssoc/vela-kit/pipe"
 	"github.com/vela-ssoc/vela-kit/lua"
+	"github.com/vela-ssoc/vela-kit/pipe"
 	"sync"
 )
 
@@ -16,8 +16,8 @@ type config struct {
 	direct   map[string]lua.LValue
 	route    []route
 
-	pipe *pipe.Px
-	sdk  *pipe.Px
+	pipe *pipe.Chains
+	sdk  *pipe.Chains
 	co   *lua.LState
 }
 
